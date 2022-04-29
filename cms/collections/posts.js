@@ -55,6 +55,11 @@ const posts = {
                 },
             ]
         },
+        {
+            label: 'Content',
+            name: 'body',
+            widget: 'markdown',
+        },
     ],
     folder: '_posts',
     format: 'yaml-frontmatter',
