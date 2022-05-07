@@ -1,0 +1,19 @@
+import markdownStyles from "./markdown-styles.module.css";
+
+type MarkdownProps = {
+  content: string;
+};
+
+const Markdown = ({ content }: MarkdownProps) => {
+  return (
+    <div className="max-w-2xl mx-auto">
+      <div
+        className={markdownStyles["markdown"]}
+        dangerouslySetInnerHTML={{ __html: content }}
+      />
+    </div>
+  );
+};
+
+export { Markdown };
+export type { MarkdownProps };
